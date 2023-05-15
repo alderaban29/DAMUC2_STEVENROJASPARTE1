@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tu Respuesta "
+        app:layout_constraintStart_toEndOf="@+id/txtapellidoynombre"
+        app:layout_constraintTop_toBottomOf="@+id/txttituloformulario" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Examen de Admision 2023"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/txttituloformulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Formulario de registro"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtapellidoynombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/textviewapeynombres"
+        app:layout_constraintStart_toStartOf="@+id/txttituloformulario"
+        app:layout_constraintTop_toBottomOf="@+id/txttituloformulario" />
+
+    <TextView
+        android:id="@+id/txtcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/txtcorreo"
+        app:layout_constraintEnd_toEndOf="@+id/txtapellidoynombre"
+        app:layout_constraintStart_toStartOf="@+id/txtapellidoynombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtapellidoynombre" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Tu Respuesta"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/txtclave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtclave"
+        app:layout_constraintStart_toStartOf="@+id/txtcorreo"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/txtnacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtfechanacimiento"
+        app:layout_constraintStart_toStartOf="@+id/txtclave"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <EditText
+        android:id="@+id/editTextDate4"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <TextView
+        android:id="@+id/txtcarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtcarrera"
+        app:layout_constraintStart_toStartOf="@+id/txtnacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/txtnacimiento" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupcarrera"
+        android:layout_width="202dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate4"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate4">
+
+        <RadioButton
+            android:id="@+id/radiosistemas"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="@string/radiosistemas" />
+
+        <RadioButton
+            android:id="@+id/radioambiental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioambiental" />
+
+        <RadioButton
+            android:id="@+id/radiomecanica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioMecanica" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/button_enviar"
+        app:layout_constraintStart_toStartOf="@+id/txtconvocatoria"
+        app:layout_constraintTop_toBottomOf="@+id/txtconvocatoria" />
+
+    <TextView
+        android:id="@+id/txtconvocatoria"
+        android:layout_width="105dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/txtconvocatoria"
+        app:layout_constraintStart_toStartOf="@+id/txtcarrera"
+        app:layout_constraintTop_toBottomOf="@+id/txtcarrera" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="205dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/radiogroupcarrera"
+        app:layout_constraintStart_toStartOf="@+id/radiogroupcarrera"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroupcarrera">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="radio" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="internet" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="amigos" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DAMUC2_STEVENROJAS</string>
+    <string name="textviewapeynombres">Apellidos y Nombres</string>
+    <string name="txtcorreo">Correo Electronico</string>
+    <string name="txtclave">Clave:</string>
+    <string name="txtfechanacimiento">Fecha de Nacimiento</string>
+    <string name="txttitulofecha">Fecha</string>
+    <string name="txtcarrera">Carrera</string>
+    <string name="radiosistemas">Ingenieria de Sistemas</string>
+    <string name="radioambiental">Ingenieria Ambiental</string>
+    <string name="radioMecanica">Ingenieria Mecanica y  Electrica</string>
+    <string name="txtconvocatoria">¿Porque medio se entero de la convocatoria?</string>
+    <string name="button_enviar">Enviar</string>
+</resources>
